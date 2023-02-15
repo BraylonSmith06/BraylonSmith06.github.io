@@ -59,10 +59,10 @@ var init = function (window) {
             //game.checkCirclePosition([]);
 
             // TODO 9 : Iterate over the array
-            for (var B = 0; B < circles.length; R++) {
-                var BS = circles[B];
-                physikz.updatePosition(BS);
-                game.checkCirclePosition(BS);
+            for (var b = 0; b < circles.length; b++) {
+                var bS = circles[b];
+                physikz.updatePosition(bS);
+                game.checkCirclePosition(bS);
             }
             
         }
@@ -75,12 +75,12 @@ var init = function (window) {
         game.checkCirclePosition = function(circle) {
 
             // if the circle has gone past the RIGHT side of the screen then place it on the LEFT
-            if ( circle.x > canvas.width ) {
+            if (circle.x > canvas.width ) {
                 circle.x = 0;
             }
             
             // TODO 6 : YOUR CODE STARTS HERE //////////////////////
-            if ( circle.x < 0 ) {
+            if (circle.x < 0 ) {
                 circle.x = canvas.width;
             }
 
