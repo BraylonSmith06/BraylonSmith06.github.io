@@ -27,14 +27,13 @@ var init = function (window) {
             circle = draw.randomCircleInArea(canvas, true, true, '#999', 2);
             physikz.addRemoveVelocity(circle, canvas, 10, 10);
             view.addChild(circle);
-            circles.push(circle);
-        };
+            circles.push(circle);}
 
         // TODO 3 / 7 : Call the drawCircle() function 
         var loopsCompleted = 0;
         for (var loopsCompleted = 0; loopsCompleted < 100; loopsCompleted++){
             drawCircle([loopsCompleted]);
-        };
+        }
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////
         ////////////////////////////////////////////////////////////
@@ -61,10 +60,10 @@ var init = function (window) {
             //game.checkCirclePosition([]);
 
             // TODO 9 : Iterate over the array
-            for (var b = 0; b < circles.length; b++) {
-                var bS = circles[b];
-                physikz.updatePosition(bS);
-                game.checkCirclePosition(bS);
+            for (var B = 0; B < circles.length; B++) {
+                var BS = circles[B];
+                physikz.updatePosition(BS);
+                game.checkCirclePosition(BS);
             }
             
         }
